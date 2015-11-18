@@ -1,10 +1,10 @@
 Package.describe({
     name: 'cerealkiller:materialnote',
-    version: '0.0.1',
+    version: '1.2.1',
     // Brief, one-line summary of the package.
     summary: 'material wysiwyg editor',
     // URL to the Git repository containing the source code for this package.
-    git: '',
+    git: 'https://github.com/Cerealkillerway/meteorMaterialNote',
     // By default, Meteor will default to using README.md for documentation.
     // To avoid submitting documentation, set this field to null.
     documentation: 'README.md'
@@ -15,7 +15,8 @@ Package.onUse(function(api) {
 
     // packages
     api.use('fourseven:scss@3.2.0', 'client');
-    api.use('tap:i18n@1.7.0');
+    //api.use('tap:i18n@1.7.0');
+    api.use('materialize:materialize@0.97.3', 'client');
 
     //exports
 
@@ -26,12 +27,15 @@ Package.onUse(function(api) {
 
 
     // templates
-
+    
     // libraries
     api.use('jquery', 'client');
     api.addFiles('lib/codeMirror/editor/codemirror.js', 'client');
     api.addFiles('lib/codeMirror/xml.js', 'client');
     api.addFiles('lib/materialNote.js', 'client');
+
+    // i18n
+    api.addFiles('i18n/generalI18n.js', 'client');
 
 });
 

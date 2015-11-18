@@ -1,68 +1,26 @@
-// ------- MATERIALIZE -------
-@charset "UTF-8";
-
-// Mixins
-@import "{}/client/styles/materialize/components/prefixer";
-@import "{}/client/styles/materialize/components/mixins";
-@import "{}/client/styles/materialize/components/color";
-
-// Variables;
-@import "{}/client/styles/materialize/components/variables";
-
-// Reset
-@import "{}/client/styles/materialize/components/normalize";
-
-// components
-@import "{}/client/styles/materialize/components/global";
-@import "{}/client/styles/materialize/components/icons-material-design";
-@import "{}/client/styles/materialize/components/grid";
-@import "{}/client/styles/materialize/components/navbar";
-@import "{}/client/styles/materialize/components/roboto";
-@import "{}/client/styles/materialize/components/typography";
-@import "{}/client/styles/materialize/components/cards";
-@import "{}/client/styles/materialize/components/toast";
-@import "{}/client/styles/materialize/components/tabs";
-@import "{}/client/styles/materialize/components/tooltip";
-@import "{}/client/styles/materialize/components/buttons";
-@import "{}/client/styles/materialize/components/dropdown";
-@import "{}/client/styles/materialize/components/waves";
-@import "{}/client/styles/materialize/components/modal";
-@import "{}/client/styles/materialize/components/collapsible";
-@import "{}/client/styles/materialize/components/chips";
-@import "{}/client/styles/materialize/components/materialbox";
-@import "{}/client/styles/materialize/components/form";
-@import "{}/client/styles/materialize/components/table_of_contents";
-@import "{}/client/styles/materialize/components/sideNav";
-@import "{}/client/styles/materialize/components/preloader";
-@import "{}/client/styles/materialize/components/slider";
-@import "{}/client/styles/materialize/components/date_picker/default.scss";
-@import "{}/client/styles/materialize/components/date_picker/default.date.scss";
-@import "{}/client/styles/materialize/components/date_picker/default.time.scss";
-// ------- END MATERIALIZE -------
-
 // app colors
 @import "{}/client/styles/colors";
 
 /* variables 
 =================================================================================*/
-$toolbarColor: color("grey", "darken-4") !default;
-$toolbarTextColor: color("grey", "lighten-5") !default;
+$toolbarColor: #212121 !default;
+$toolbarTextColor: #fafafa !default;
 
-$borderColor: color("grey", "base") !default;
+$borderColor: #9e9e9e !default;
 
-$firstButtonColor: color("grey", "darken-4") !default;
-$firstButtonHoverColor: color("indigo", "base") !default;
-$secondButtonColor: color("red", "darken-4") !default;
-$secondButtonHoverColor: color("indigo", "base") !default;
-$thirdButtonColor: color("purple", "darken-4") !default;
-$thirdButtonHoverColor: color("indigo", "base") !default;
+$firstButtonColor: #212121 !default;
+$firstButtonHoverColor: #3f51b5 !default;
+$secondButtonColor: #b71c1c !default;
+$secondButtonHoverColor: #3f51b5 !default;
+$thirdButtonColor: #4a148c !default;
+$thirdButtonHoverColor: #3f51b5 !default;
 
-$firstFocusColor: color("purple", "base") !default;
-$secondFocusColor: color("red", "accent-3") !default;
+$firstFocusColor: #9c27b0 !default;
+$secondFocusColor: #ff1744 !default;
 
-$selectionColor: color("grey", "darken-1") !default;
+$selectionColor: #757575 !default;
 
-$helpBackgroundColor: color("grey", "lighten-2") !default;
+$helpBackgroundColor: #e0e0e0 !default;
 
 // base unit for table dimension picker
 $gridUnit: 26px;
@@ -389,9 +347,9 @@ $gridUnit: 26px;
         display: inline-block;
         color: $toolbarTextColor;
 
-        @media #{$small-and-down} {
-            display: none;
-        }
+        //@media #{$small-and-down} {
+            //display: none;
+        //}
     }
 
     .note-color-palette {
