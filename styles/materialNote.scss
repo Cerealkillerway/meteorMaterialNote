@@ -28,6 +28,11 @@ $gridUnit: 26px;
 
 
 
+.CodeMirror {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 .editorDialogs .modal, .note-editor .modal {
     background-color: $toolbarColor;
     color: $toolbarTextColor;
@@ -353,7 +358,7 @@ $gridUnit: 26px;
         line-height: 10px;
         border: solid 3px $toolbarColor;
         padding: 0 !important;
-        overflow-x: scroll;
+        overflow-x: hidden;
         overflow-y: hidden;
 
         .note-color-row {
