@@ -36,7 +36,7 @@ $gridUnit: 26px;
 .editorDialogs .modal, .note-editor .modal {
     background-color: $toolbarColor;
     color: $toolbarTextColor;
-    z-index: 1057 !important;
+    z-index: 3003;
     backface-visibility: hidden;
 
     .input-field input:not([readonly]), .input-field input.datepicker {
